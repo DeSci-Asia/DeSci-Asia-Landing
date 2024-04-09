@@ -4,12 +4,9 @@ import Image from "next/image";
 import { Typography } from "@material-tailwind/react";
 
 const SPONSORS = [
-  "coinbase",
-  "spotify",
-  "pinterest",
-  "google",
-  "amazon",
-  "netflix",
+  "descijapan",
+  "descisingapore",
+  "descilondon",
 ];
 
 export function SponsoredBy() {

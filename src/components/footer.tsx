@@ -12,7 +12,7 @@ export function Footer() {
             className="text-2xl md:text-3xl text-center font-bold "
             color="white"
           >
-            Join now and get 30% OFF!
+            Join now as a member!
           </Typography>
           <Typography
             color="white"
@@ -34,7 +34,7 @@ export function Footer() {
             variant="h6"
             className="text-gray-900"
           >
-            Material Tailwind
+            DeSci Asia
           </Typography>
           <ul className="flex justify-center my-4 md:my-0 w-max mx-auto items-center gap-4">
             {LINKS.map((link, index) => (
@@ -72,13 +72,8 @@ export function Footer() {
         >
           &copy; {CURRENT_YEAR} Made with{" "}
           <a href="https://www.material-tailwind.com" target="_blank">
-            Material Tailwind
-          </a>{" "}
-          by{" "}
-          <a href="https://www.creative-tim.com" target="_blank">
-            Creative Tim
+            DeSci Asia
           </a>
-          .
         </Typography>
       </div>
     </footer>

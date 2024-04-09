@@ -22,10 +22,10 @@ export function AboutEvent() {
   return (
     <section className="container mx-auto flex flex-col items-center px-4 py-10">
       <Typography variant="h6" className="text-center mb-2" color="orange">
-        About the event
+        About the collective
       </Typography>
       <Typography variant="h3" className="text-center" color="blue-gray">
-        Why Attend?
+        Why Join?
       </Typography>
       <Typography
         variant="lead"

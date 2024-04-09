@@ -22,6 +22,7 @@ interface NavItemProps {
 
 function NavItem({ children, href }: NavItemProps) {
   return (
+    
     <li>
       <Typography
         as="a"
@@ -38,11 +39,11 @@ function NavItem({ children, href }: NavItemProps) {
 
 const NAV_MENU = [
   {
-    name: "Page",
+    name: "Events",
     icon: RectangleStackIcon,
   },
   {
-    name: "Account",
+    name: "Members",
     icon: UserCircleIcon,
   },
   {
@@ -92,7 +93,7 @@ export function Navbar() {
           color={isScrolling ? "blue-gray" : "white"}
           className="text-lg font-bold"
         >
-          Material Tailwind
+          DeSci Asia
         </Typography>
         <ul
           className={`ml-10 hidden items-center gap-6 lg:flex ${
@@ -105,14 +106,17 @@ export function Navbar() {
               <span>{name}</span>
             </NavItem>
           ))}
+
         </ul>
+        
         <div className="hidden items-center gap-4 lg:flex">
           <Button color={isScrolling ? "gray" : "white"} variant="text">
-            Log in
+            Contact us
           </Button>
           <a href="https://www.material-tailwind.com/blocks" target="_blank">
-            <Button color={isScrolling ? "gray" : "white"}>blocks</Button>
+            <Button color={isScrolling ? "gray" : "white"}>Join Us</Button>
           </a>
+          
         </div>
         <IconButton
           variant="text"
