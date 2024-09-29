@@ -13,18 +13,17 @@ interface AboutCardProp {
 
 export function AboutCard({ title, description, subTitle }: AboutCardProp) {
   return (
-    <Card shadow={false}>
-      <CardBody className="h-[453px] p-5 flex flex-col justify-center items-center rounded-2xl bg-gray-900">
-        <Typography variant="h6" className="mb-4 text-center" color="white">
+    <Card shadow={false}  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
+      <CardBody className="h-[453px] p-5 flex flex-col justify-center items-center rounded-2xl bg-gray-900" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
+        <Typography variant="h6" className="mb-4 text-center" color="white"  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
           {subTitle}
         </Typography>
-        <Typography variant="h4" className="text-center" color="white">
+        <Typography variant="h4" className="text-center" color="white" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
           {title}
         </Typography>
         <Typography
           color="white"
-          className="mt-2 mb-10 text-base w-full lg:w-8/12 text-center font-normal"
-        >
+          className="mt-2 mb-10 text-base w-full lg:w-8/12 text-center font-normal"  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}        >
           {description}
         </Typography>
         {/* <Button color="white" size="sm">

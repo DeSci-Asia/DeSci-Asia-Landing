@@ -56,13 +56,12 @@ export function Faq() {
     <section id="faq" className="py-8 px-8 lg:py-20">
       <div className="container mx-auto">
         <div className="text-center">
-          <Typography variant="h1" color="blue-gray" className="mb-4">
+          <Typography variant="h1" color="blue-gray" className="mb-4" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
             Frequently asked questions
           </Typography>
           <Typography
             variant="lead"
-            className="mx-auto mb-24 lg:w-3/5 !text-gray-500"
-          >
+            className="mx-auto mb-24 lg:w-3/5 !text-gray-500"  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}          >
             Let us address your most common queries and provide you with the
             information you need to understand us better.
           </Typography>
@@ -73,16 +72,14 @@ export function Faq() {
             <Accordion
               key={key}
               open={open === key + 1}
-              onClick={() => handleOpen(key + 1)}
-            >
-              <AccordionHeader className="text-left text-gray-900">
+              onClick={() => handleOpen(key + 1)}  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}            >
+              <AccordionHeader className="text-left text-gray-900"  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
                 {title}
               </AccordionHeader>
               <AccordionBody>
                 <Typography
                   color="blue-gray"
-                  className="font-normal text-gray-500"
-                >
+                  className="font-normal text-gray-500"  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}                >
                   {desc}
                 </Typography>
               </AccordionBody>

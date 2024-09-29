@@ -18,21 +18,20 @@ const EVENT_INFO = [
   },
 ];
 
-
 export function AboutEvent() {
   return (
     <section className="container mx-auto flex flex-col items-center px-4 py-10">
-      <Typography variant="h6" className="text-center mb-2" color="purple">
-      Why Join?
+      {/* Updated Typography to handle colors via Tailwind classes */}
+      <Typography variant="h6" className="text-center mb-2 text-purple-600"  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
+        Why Join?
       </Typography>
      
       <Typography
         variant="lead"
-        className="mt-2 lg:max-w-4xl mb-8 w-full text-center font-normal !text-gray-500"
-      >
-        
-We’re a community-led DAO supporting the decentralized science movement in Asia and globally. By joining us, you'll help drive open access to research, collaboration, and innovation across borders. Together, we aim to make science more transparent, accessible, and inclusive for all.
+        className="mt-2 lg:max-w-4xl mb-8 w-full text-center font-normal !text-gray-500" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} >
+        {"We’re a community-led DAO supporting the decentralized science movement in Asia and globally. By joining us, you'll help drive open access to research, collaboration, and innovation across borders. Together, we aim to make science more transparent, accessible, and inclusive for all."}
       </Typography>
+      
       <div className="mt-8 w-full grid grid-cols-1 md:grid-cols-2 gap-4 ">
         {EVENT_INFO.map((props, idx) => (
           <AboutCard key={idx} {...props} />
@@ -42,7 +41,7 @@ We’re a community-led DAO supporting the decentralized science movement in Asi
             title="Building Connections"
             subTitle="Community"
             description="Form strong connections with DeSci innovators and peers to foster mutual growth and opportunities."
-            />
+          />
         </div>
       </div>
     </section>

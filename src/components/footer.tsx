@@ -11,19 +11,17 @@ export function Footer() {
         <div className="flex !w-full py-10 mb-5 md:mb-20 flex-col justify-center !items-center bg-gray-900 max-w-6xl mx-auto rounded-2xl p-5 ">
           <Typography
             className="text-2xl md:text-3xl text-center font-bold "
-            color="white"
-          >
+            color="white"  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}          >
             Join now as a member!
           </Typography>
           <Typography
             color="white"
-            className=" md:w-7/12 text-center my-3 !text-base"
-          >
+            className=" md:w-7/12 text-center my-3 !text-base" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}          >
             Connect with our brilliant community innovating Science.
           </Typography>
           <div className="flex w-full md:w-fit gap-3 mt-2 flex-col md:flex-row">
             <a href="https://t.me/DeSciAsia" target="_blank">
-              <Button color="white" size="md">
+              <Button color="white" size="md" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
                 Join Community
               </Button>
             </a>
@@ -36,8 +34,7 @@ export function Footer() {
             href="https://www.material-tailwind.com"
             target="_blank"
             variant="h6"
-            className="text-gray-900"
-          >
+            className="text-gray-900"  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}          >
             DeSci Asia
           </Typography>
           {/* <ul className="flex justify-center my-4 md:my-0 w-max mx-auto items-center gap-4">
@@ -57,7 +54,7 @@ export function Footer() {
           </ul> */}
           <div className="flex w-fit justify-center gap-2">
             <Link href={"https://x.com/DeSciAsia"}>
-              <IconButton size="sm" color="gray" variant="text">
+              <IconButton size="sm" color="gray" variant="text" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
               <i className="fa-brands fa-x text-lg" />
               </IconButton>
             </Link>
@@ -65,12 +62,12 @@ export function Footer() {
               <i className="fa-brands fa-youtube text-lg" />
             </IconButton> */}
             <Link href={"https://t.me/DeSciAsia"}>
-              <IconButton size="sm" color="gray" variant="text">
+              <IconButton size="sm" color="gray" variant="text" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
                 <i className="fa-brands fa-telegram text-lg" />
               </IconButton>
             </Link>
             <Link href={"https://github.com/DeSci-Asia"}>
-              <IconButton size="sm" color="gray" variant="text">
+              <IconButton size="sm" color="gray" variant="text"  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
                 <i className="fa-brands fa-github text-lg" />
               </IconButton>
             </Link>
@@ -78,8 +75,7 @@ export function Footer() {
         </div>
         <Typography
           color="blue-gray"
-          className="text-center mt-12 font-normal !text-gray-700"
-        >
+          className="text-center mt-12 font-normal !text-gray-700"  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}        >
           &copy; {CURRENT_YEAR} Made with ❤️ for {" "}
           <a href="https://www.material-tailwind.com" target="_blank">
             DeSci Asia
