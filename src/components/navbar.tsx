@@ -22,7 +22,7 @@ interface NavItemProps {
 
 function NavItem({ children, href }: NavItemProps) {
   return (
-    
+
     <li>
       <Typography
         as="a"
@@ -95,7 +95,7 @@ export function Navbar() {
         >
           DeSci Asia
         </Typography>
-        <ul
+        {/* <ul
           className={`ml-10 hidden items-center gap-6 lg:flex ${
             isScrolling ? "text-gray-900" : "text-white"
           }`}
@@ -108,15 +108,18 @@ export function Navbar() {
           ))}
 
         </ul>
-        
+         */}
         <div className="hidden items-center gap-4 lg:flex">
-          <Button color={isScrolling ? "gray" : "white"} variant="text">
-            Contact us
-          </Button>
-          <a href="https://www.material-tailwind.com/blocks" target="_blank">
+          <a href="#faq">
+            <Button color={isScrolling ? "gray" : "white"} variant="text">
+              Learn More
+            </Button>
+          </a>
+
+          <a href="https://t.me/DeSciAsia" target="_blank">
             <Button color={isScrolling ? "gray" : "white"}>Join Us</Button>
           </a>
-          
+
         </div>
         <IconButton
           variant="text"

@@ -27,9 +27,9 @@ export function AboutCard({ title, description, subTitle }: AboutCardProp) {
         >
           {description}
         </Typography>
-        <Button color="white" size="sm">
+        {/* <Button color="white" size="sm">
           view details
-        </Button>
+        </Button> */}
       </CardBody>
     </Card>
   );

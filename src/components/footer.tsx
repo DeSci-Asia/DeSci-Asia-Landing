@@ -1,4 +1,5 @@
 import { Typography, Button, IconButton } from "@material-tailwind/react";
+import Link from "next/link";
 
 const CURRENT_YEAR = new Date().getFullYear();
 const LINKS = ["Company", "About Us", "Team", "Products", "Blog"];
@@ -18,12 +19,15 @@ export function Footer() {
             color="white"
             className=" md:w-7/12 text-center my-3 !text-base"
           >
-            Don&apos;t miss out on this exclusive offer that will end soon.
+            Connect with our brilliant community innovating Science.
           </Typography>
           <div className="flex w-full md:w-fit gap-3 mt-2 flex-col md:flex-row">
-            <Button color="white" size="md">
-              buy ticket
-            </Button>
+            <a href="https://t.me/DeSciAsia" target="_blank">
+              <Button color="white" size="md">
+                Join Community
+              </Button>
+            </a>
+
           </div>
         </div>
         <div className="flex flex-col md:flex-row items-center !justify-between">
@@ -36,7 +40,7 @@ export function Footer() {
           >
             DeSci Asia
           </Typography>
-          <ul className="flex justify-center my-4 md:my-0 w-max mx-auto items-center gap-4">
+          {/* <ul className="flex justify-center my-4 md:my-0 w-max mx-auto items-center gap-4">
             {LINKS.map((link, index) => (
               <li key={index}>
                 <Typography
@@ -50,27 +54,33 @@ export function Footer() {
                 </Typography>
               </li>
             ))}
-          </ul>
+          </ul> */}
           <div className="flex w-fit justify-center gap-2">
-            <IconButton size="sm" color="gray" variant="text">
-              <i className="fa-brands fa-twitter text-lg" />
-            </IconButton>
-            <IconButton size="sm" color="gray" variant="text">
+            <Link href={"https://x.com/DeSciAsia"}>
+              <IconButton size="sm" color="gray" variant="text">
+              <i className="fa-brands fa-x text-lg" />
+              </IconButton>
+            </Link>
+            {/* <IconButton size="sm" color="gray" variant="text">
               <i className="fa-brands fa-youtube text-lg" />
-            </IconButton>
-            <IconButton size="sm" color="gray" variant="text">
-              <i className="fa-brands fa-instagram text-lg" />
-            </IconButton>
-            <IconButton size="sm" color="gray" variant="text">
-              <i className="fa-brands fa-github text-lg" />
-            </IconButton>
+            </IconButton> */}
+            <Link href={"https://t.me/DeSciAsia"}>
+              <IconButton size="sm" color="gray" variant="text">
+                <i className="fa-brands fa-telegram text-lg" />
+              </IconButton>
+            </Link>
+            <Link href={"https://github.com/DeSci-Asia"}>
+              <IconButton size="sm" color="gray" variant="text">
+                <i className="fa-brands fa-github text-lg" />
+              </IconButton>
+            </Link>
           </div>
         </div>
         <Typography
           color="blue-gray"
           className="text-center mt-12 font-normal !text-gray-700"
         >
-          &copy; {CURRENT_YEAR} Made with{" "}
+          &copy; {CURRENT_YEAR} Made with ❤️ for {" "}
           <a href="https://www.material-tailwind.com" target="_blank">
             DeSci Asia
           </a>

@@ -5,20 +5,20 @@ import StatsCard from "@/components/stats-card";
 
 const STATS = [
   {
-    count: "1,500+",
-    title: "Participants",
+    count: "380+",
+    title: "Members",
   },
   {
-    count: "50",
+    count: "15+",
     title: "Speakers",
   },
   {
-    count: "20+",
-    title: "Workshops",
+    count: "5+",
+    title: "Workshops and Events",
   },
   {
-    count: "3",
-    title: "Days",
+    count: "5+",
+    title: "Countries",
   },
 ];
 
@@ -33,15 +33,14 @@ export function OurStats() {
           className="text-5xl font-bold leading-tight lg:w-3/4"
           color="blue-gray"
         >
-          Conference Highlights
+          Community Highlights
         </Typography>
         <Typography
           variant="lead"
           className="mt-3 w-full !text-gray-500 lg:w-9/12"
         >
-          This three-day extravaganza brings together the brightest minds,
-          leading innovators, and top companies in the field of Artificial
-          Intelligence.
+          DeSci Asia brings together the brightest minds,
+          leading innovators, and top companies working towards Decentralized Science.
         </Typography>
       </div>
       <div>

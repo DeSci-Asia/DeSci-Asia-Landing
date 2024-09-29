@@ -5,36 +5,33 @@ import AboutCard from "@/components/about-card";
 
 const EVENT_INFO = [
   {
-    title: "Cutting-Edge Insights!",
+    title: "Support",
     description:
-      "Gain deep insights into the latest AI trends, developments, and applications that are reshaping industries worldwide. ",
-    subTitle: "Presentation",
+      "Get support for your projects and collaborate with us on events and joint initiatives.",
+    subTitle: "Funding and Partnerships",
   },
   {
-    title: "Practical Knowledge!",
+    title: "Ecosystem Knowledge",
     description:
-      "Attend workshops and hands-on sessions to acquire practical skills that you can apply immediately.",
-    subTitle: "Workshops",
+      "Join our Twitter Spaces in collaboration with ecosystem projects to discuss the latest efforts in DeSci.",
+    subTitle: "Online Discussions",
   },
 ];
+
 
 export function AboutEvent() {
   return (
     <section className="container mx-auto flex flex-col items-center px-4 py-10">
       <Typography variant="h6" className="text-center mb-2" color="orange">
-        About the collective
+      Why Join?
       </Typography>
-      <Typography variant="h3" className="text-center" color="blue-gray">
-        Why Join?
-      </Typography>
+     
       <Typography
         variant="lead"
         className="mt-2 lg:max-w-4xl mb-8 w-full text-center font-normal !text-gray-500"
       >
-        Welcome to the AI Conference 2023, where the future unfolds! Whether
-        you&apos;re a seasoned AI professional, a curious newcomer, or a
-        business leader looking to harness the power of AI, this conference is
-        designed to inspire, educate, and connect.
+        
+We’re a community-led DAO supporting the decentralized science movement in Asia and globally. By joining us, you'll help drive open access to research, collaboration, and innovation across borders. Together, we aim to make science more transparent, accessible, and inclusive for all.
       </Typography>
       <div className="mt-8 w-full grid grid-cols-1 md:grid-cols-2 gap-4 ">
         {EVENT_INFO.map((props, idx) => (
@@ -42,10 +39,10 @@ export function AboutEvent() {
         ))}
         <div className="md:col-span-2">
           <AboutCard
-            title="Networking!"
+            title="Building Connections"
             subTitle="Community"
-            description="Connect with industry leaders, AI experts, and fellow enthusiasts to build valuable professional relationships."
-          />
+            description="Form strong connections with DeSci innovators and peers to foster mutual growth and opportunities."
+            />
         </div>
       </div>
     </section>
