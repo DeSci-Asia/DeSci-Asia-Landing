@@ -90,7 +90,7 @@ export function Navbar() {
     >
       <div className="container mx-auto flex items-center justify-between">
         <Typography
-          color={isScrolling ? "blue-gray" : "white"}
+          color={isScrolling ? "blue-gray" : "black"}
           className="text-lg font-bold"
         >
           DeSci Asia
@@ -111,13 +111,13 @@ export function Navbar() {
          */}
         <div className="hidden items-center gap-4 lg:flex">
           <a href="#faq">
-            <Button color={isScrolling ? "gray" : "white"} variant="text">
+            <Button color={isScrolling ? "gray" : "black"} variant="text">
               Learn More
             </Button>
           </a>
 
           <a href="https://t.me/DeSciAsia" target="_blank">
-            <Button color={isScrolling ? "gray" : "white"}>Join Us</Button>
+            <Button color={isScrolling ? "gray" : "black"}>Join Us</Button>
           </a>
 
         </div>
