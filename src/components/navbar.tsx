@@ -106,7 +106,7 @@ export function Navbar() {
         </div>
         <IconButton
           variant="text"
-          className={`ml-auto inline-block lg:hidden ${isScrolling ? "text-black" : "text-white"}`}
+          className={`ml-auto inline-block lg:hidden ${isScrolling ? "text-black" : "text-black"}`}
           onClick={handleOpen}
           placeholder={undefined}
           onPointerEnterCapture={undefined}
@@ -132,10 +132,17 @@ export function Navbar() {
             ))}
           </ul> */}
           <div className="mt-6 flex items-center gap-4">
-            <Button variant="text" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>Log in</Button>
-            <a href="https://www.materila-tailwind.com/blocks" target="_blank">
-              <Button className="bg-gray-700 text-white" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>blocks</Button>
-            </a>
+          <a href="#faq">
+            <Button className={isScrolling ? "text-black" : "text-black"} variant="text" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
+              Learn More
+            </Button>
+          </a>
+
+          <a href="https://t.me/DeSciAsia" target="_blank">
+            <Button className={isScrolling ? "bg-black text-white" : "bg-black text-white"} placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
+              Join Us
+            </Button>
+          </a>
           </div>
         </div>
       </Collapse>
