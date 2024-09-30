@@ -27,8 +27,7 @@ function NavItem({ children, href }: NavItemProps) {
         href={href || "#"}
         target={href ? "_blank" : "_self"}
         variant="paragraph"
-        className="flex items-center gap-2 font-medium"
-      >
+        className="flex items-center gap-2 font-medium"  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}      >
         {children}
       </Typography>
     </li>
@@ -84,25 +83,23 @@ export function Navbar() {
       fullWidth
       blurred={false}
       color={isScrolling ? "white" : "transparent"}
-      className="fixed top-0 z-50 border-0"
-    >
+      className="fixed top-0 z-50 border-0"  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}    >
       <div className="container mx-auto flex items-center justify-between">
         <Typography
           color={isScrolling ? "blue-gray" : "black"}
-          className="text-lg font-bold"
-        >
+          className="text-lg font-bold"  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}        >
           DeSci Asia
         </Typography>
 
         <div className="hidden items-center gap-4 lg:flex">
           <a href="#faq">
-            <Button className={isScrolling ? "text-black" : "text-black"} variant="text">
+            <Button className={isScrolling ? "text-black" : "text-black"} variant="text"  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
               Learn More
             </Button>
           </a>
 
           <a href="https://t.me/DeSciAsia" target="_blank">
-            <Button className={isScrolling ? "bg-black text-white" : "bg-black text-white"}>
+            <Button className={isScrolling ? "bg-black text-white" : "bg-black text-white"}  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
               Join Us
             </Button>
           </a>
@@ -110,8 +107,7 @@ export function Navbar() {
         <IconButton
           variant="text"
           className={`ml-auto inline-block lg:hidden ${isScrolling ? "text-black" : "text-black"}`}
-          onClick={handleOpen}
-        >
+          onClick={handleOpen} placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}        >
           {open ? (
             <XMarkIcon strokeWidth={2} className="h-6 w-6" />
           ) : (
@@ -126,16 +122,14 @@ export function Navbar() {
             <a href="#faq" className="w-full">
               <Button
                 className={isScrolling ? "text-black w-full" : "text-black w-full"}
-                variant="text"
-              >
+                variant="text"  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}              >
                 Learn More
               </Button>
             </a>
 
             <a href="https://t.me/DeSciAsia" target="_blank" className="w-full">
               <Button
-                className={isScrolling ? "bg-black text-white w-full" : "bg-black text-white w-full"}
-              >
+                className={isScrolling ? "bg-black text-white w-full" : "bg-black text-white w-full"} placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}              >
                 Join Us
               </Button>
             </a>
