@@ -30,7 +30,7 @@ export function Footer() {
         <div className="flex flex-col md:flex-row items-center !justify-between">
           <Typography
             as="a"
-            href="https://www.material-tailwind.com"
+            href="https://desciasia.org/"
             target="_blank"
             variant="h6"
             className="text-gray-900"  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}          >
@@ -52,13 +52,23 @@ export function Footer() {
                 <i className="fa-brands fa-github text-lg" />
               </IconButton>
             </Link>
+            <Link href={"https://gap.karmahq.xyz/project/desci-asia"}>
+              <IconButton size="sm" color="gray" variant="text"  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
+                <i className="fa-brands fa-x text-lg" />
+              </IconButton>
+            </Link>
+            <Link href={"https://giveth.io/project/desci-asia"}>
+              <IconButton size="sm" color="gray" variant="text"  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
+                <i className="fa-brands fa-x text-lg" />
+              </IconButton>
+            </Link>
           </div>
         </div>
         <Typography
           color="blue-gray"
           className="text-center mt-12 font-normal !text-gray-700"  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}        >
           &copy; {CURRENT_YEAR} Made with ❤️ for{" "}
-          <a href="https://www.material-tailwind.com" target="_blank">
+          <a href="https://desciasia.org/" target="_blank">
             DeSci Asia
           </a>
         </Typography>
