@@ -54,12 +54,12 @@ export function Footer() {
             </Link>
             <Link href={"https://gap.karmahq.xyz/project/desci-asia"}>
               <IconButton size="sm" color="gray" variant="text"  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
-                <i className="fa-brands fa-x text-lg" />
+                <i className=" fa-solid fa-link text-lg" />
               </IconButton>
             </Link>
             <Link href={"https://giveth.io/project/desci-asia"}>
               <IconButton size="sm" color="gray" variant="text"  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
-                <i className="fa-brands fa-x text-lg" />
+                <i className=" fa-solid fa-link text-lg" />
               </IconButton>
             </Link>
           </div>

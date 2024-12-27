@@ -15,6 +15,7 @@ const SPONSORS = [
   "descitokyo",
   "desciworld",
   "gitdataai",
+  "fundesci"
 ];
 
 export function SponsoredBy() {
