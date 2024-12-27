@@ -4,9 +4,17 @@ import Image from "next/image";
 import { Typography } from "@material-tailwind/react";
 
 const SPONSORS = [
+  "aurasci",
+  "desciindia",
   "descijapan",
-  "descisingapore",
+  "descikolkata",
+  "descilatam",
   "descilondon",
+  "desciseoul",
+  "descisino",
+  "descitokyo",
+  "desciworld",
+  "gitdataai",
 ];
 
 export function SponsoredBy() {
