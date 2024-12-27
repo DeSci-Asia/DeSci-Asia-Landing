@@ -29,7 +29,7 @@ export function AboutEvent() {
       <Typography
         variant="lead"
         className="mt-2 lg:max-w-4xl mb-8 w-full text-center font-normal !text-gray-500" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} >
-        {"We’re a community-led DAO supporting the decentralized science movement in Asia and globally. By joining us, you'll help drive open access to research, collaboration, and innovation across borders. Together, we aim to make science more transparent, accessible, and inclusive for all."}
+        {"We’re a community supporting the decentralized science movement in Asia and globally. By joining us, you'll help drive open access to research, collaboration, and innovation across borders. Together, we aim to make science more transparent, accessible, and inclusive for all."}
       </Typography>
       
       <div className="mt-8 w-full grid grid-cols-1 md:grid-cols-2 gap-4 ">
