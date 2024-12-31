@@ -17,7 +17,7 @@ const STATS = [
     title: "Workshops and Events",
   },
   {
-    count: "5+",
+    count: "8+",
     title: "Countries",
   },
 ];
