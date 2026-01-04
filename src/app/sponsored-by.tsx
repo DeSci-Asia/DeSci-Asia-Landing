@@ -18,6 +18,21 @@ const SPONSORS = [
   "fundesci"
 ];
 
+const SPONSOR_LINKS: { [key: string]: string } = {
+  aurasci: "https://aurasci.xyz/",
+  desciindia: "https://desciindia.org/",
+  descijapan: "https://x.com/DeSciJapan",
+  descikolkata: "https://x.com/DeSciKolkata",
+  descilatam: "https://bento.me/descilatam",
+  descilondon: "https://x.com/DesciLondon",
+  desciseoul: "https://x.com/DesciSeoul",
+  descisino: "https://x.com/DesciSino",
+  descitokyo: "https://desci-tokyo.jp/",
+  desciworld: "https://desci.world/",
+  gitdataai: "https://gitdata.ai/",
+  fundesci: "https://fundesci.com/"
+};
+
 export function SponsoredBy() {
   return (
     <section className="py-8 px-8 lg:py-20">
@@ -26,16 +41,33 @@ export function SponsoredBy() {
           IN COLLABORATION WITH
         </Typography>
         <div className="flex flex-wrap items-center justify-center gap-6">
-          {SPONSORS.map((logo, key) => (
-            <Image
-              width={256}
-              height={256}
-              key={key}
-              src={`/logos/logo-${logo}.jpg`}
-              alt={logo}
-              className="w-40"
-            />
-          ))}
+          {SPONSORS.map((logo, key) => {
+            const link = SPONSOR_LINKS[logo];
+            const imageElement = (
+              <Image
+                width={256}
+                height={256}
+                key={key}
+                src={`/logos/logo-${logo}.jpg`}
+                alt={logo}
+                className="w-40"
+              />
+            );
+
+            return link ? (
+              <a
+                key={key}
+                href={link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block hover:opacity-80 transition-opacity"
+              >
+                {imageElement}
+              </a>
+            ) : (
+              <div key={key}>{imageElement}</div>
+            );
+          })}
         </div>
       </div>
     </section>
