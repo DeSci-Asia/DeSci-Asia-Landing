@@ -4,18 +4,18 @@ import Image from "next/image";
 import { Typography } from "@material-tailwind/react";
 
 const SPONSORS = [
-  "aurasci",
-  "desciindia",
-  "descijapan",
-  "descikolkata",
-  "descilatam",
-  "descilondon",
-  "desciseoul",
-  "descisino",
-  "descitokyo",
-  "desciworld",
-  "gitdataai",
-  "fundesci"
+  { id: "aurasci", url: "https://aurasci.xyz/" },
+  { id: "desciindia", url: "https://desciindia.org/" },
+  { id: "descijapan", url: "https://x.com/DeSciJapan" },
+  { id: "descikolkata", url: "https://x.com/DeSciKolkata" },
+  { id: "descilatam", url: "https://x.com/DeSciLATAM" },
+  { id: "descilondon", url: "https://www.desci.london/" },
+  { id: "desciseoul", url: "https://x.com/DeSciSeoul" },
+  { id: "descisino", url: "https://x.com/DesciSino" },
+  { id: "descitokyo", url: "https://desci-tokyo.jp/" },
+  { id: "desciworld", url: "https://desci.world" },
+  { id: "gitdataai", url: "https://gitdata.ai" },
+  { id: "fundesci", url: "https://fundesci.com/" },
 ];
 
 export function SponsoredBy() {
