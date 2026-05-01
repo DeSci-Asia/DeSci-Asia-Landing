@@ -22,13 +22,13 @@ export function AboutEvent() {
   return (
     <section className="container mx-auto flex flex-col items-center px-4 py-10">
       {/* Updated Typography to handle colors via Tailwind classes */}
-      <Typography variant="h6" className="text-center mb-2 text-purple-600"  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
+      <Typography variant="h6" className="text-center mb-2 text-purple-600"  placeholder={undefined} onResize={undefined} onResizeCapture={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
         Why Join?
       </Typography>
      
       <Typography
         variant="lead"
-        className="mt-2 lg:max-w-4xl mb-8 w-full text-center font-normal !text-gray-500" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} >
+        className="mt-2 lg:max-w-4xl mb-8 w-full text-center font-normal !text-gray-500" placeholder={undefined} onResize={undefined} onResizeCapture={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} >
         {"We’re a community supporting the decentralized science movement in Asia and globally. By joining us, you'll help drive open access to research, collaboration, and innovation across borders. Together, we aim to make science more transparent, accessible, and inclusive for all."}
       </Typography>
       
