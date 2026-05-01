@@ -8,15 +8,15 @@ function Hero() {
       <div className="grid min-h-screen px-8">
         <div className="container relative z-10 my-auto mx-auto grid place-items-center text-center">
           {/* Use Tailwind classes for text color */}
-          <Typography variant="h3" className="mb-2 text-gray-700" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
+          <Typography variant="h3" className="mb-2 text-gray-700" placeholder={undefined} onResize={undefined} onResizeCapture={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
             Collective Effort To Improve Science
           </Typography>
-          <Typography variant="h1" className="lg:max-w-3xl text-gray-900" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
+          <Typography variant="h1" className="lg:max-w-3xl text-gray-900" placeholder={undefined} onResize={undefined} onResizeCapture={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
             DeSci Asia
           </Typography>
           <Typography
             variant="lead"
-            className="mt-1 mb-12 w-full md:max-w-full lg:max-w-2xl text-gray-700" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}          >
+            className="mt-1 mb-12 w-full md:max-w-full lg:max-w-2xl text-gray-700" placeholder={undefined} onResize={undefined} onResizeCapture={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}          >
             Empowering Better Science Collaboration
           </Typography>
           <div className="flex items-center gap-4">
